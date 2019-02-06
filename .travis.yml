@@ -1,0 +1,20 @@
+language: python
+python:
+  - "2.7"
+
+install:
+  - echo "Aqui se instalan cosas"
+#  - pip install django
+
+before_script:
+  - echo "Antes de ejecutar un script"
+
+script:
+  - echo "Pruebas Unitarias de Calculadora"
+  - python Test*.py
+  - echo "Finalizar"
+
+ 
+
+notifications:
+email: false
